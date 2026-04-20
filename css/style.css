@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Tahoma', 'מנהטן', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f4;
+    direction: rtl;
+    text-align: right;
+}
+
+header {
+    background: linear-gradient(135deg, #8b7355 0%, #a0826d 100%);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    flex-direction: row-reverse;
+}
+
+.navbar h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #8b7355;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #d4a574;
+    padding-bottom: 0.8rem;
+    font-size: 2rem;
+}
+
+.recipes-container {
+    padding: 0;
+}
+
+.recipe {
+    background-color: #fffbf7;
+    border-right: 5px solid #d4a574;
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(139, 115, 85, 0.1);
+}
+
+.recipe h3 {
+    color: #8b7355;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.multiplier-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    background-color: #f0e6d2;
+    padding: 0.8rem;
+    border-radius: 6px;
+}
+
+.mult-btn {
+    background-color: #d4a574;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.mult-btn:hover {
+    background-color: #c49560;
+    transform: scale(1.05);
+}
+
+.mult-btn:active {
+    transform: scale(0.95);
+}
+
+.mult-display {
+    font-weight: bold;
+    color: #8b7355;
+    font-size: 1.1rem;
+    min-width: 40px;
+    text-align: center;
+}
+
+.ingredients {
+    margin-bottom: 1rem;
+}
+
+.ingredients h4 {
+    color: #a0826d;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding-right: 1rem;
+}
+
+.ingredients li {
+    padding: 0.5rem 0;
+    line-height: 1.8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.amount {
+    font-weight: bold;
+    color: #8b7355;
+    min-width: 50px;
+    text-align: left;
+}
+
+.unit {
+    color: #a0826d;
+    font-size: 0.9rem;
+    min-width: 40px;
+    text-align: left;
+}
+
+.instructions {
+    background-color: #f5f0e8;
+    padding: 1rem;
+    border-radius: 6px;
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+    border-right: 3px solid #d4a574;
+}
+
+.about {
+    text-align: right;
+}
+
+.about h2 {
+    color: #8b7355;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+footer {
+    background-color: #8b7355;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .recipe h3 {
+        font-size: 1.2rem;
+    }
+
+    .multiplier-buttons {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .ingredients li {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.2rem;
+    }
+}

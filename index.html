@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מאפים</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>🥖 מאפים</h1>
+            <ul>
+                <li><a href="#recipes">מתכונים</a></li>
+                <li><a href="#about">אודות</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipes" class="recipes-container">
+            <h2>מתכונים</h2>
+
+            <!-- Recipe 1 -->
+            <div class="recipe">
+                <h3>לחם קסטן של אדוה רויס</h3>
+                <div class="multiplier-buttons">
+                    <button class="mult-btn" onclick="setMultiplier(this, 0.5)">÷2</button>
+                    <span class="mult-display">x1</span>
+                    <button class="mult-btn" onclick="setMultiplier(this, 2)">×2</button>
+                </div>
+                
+                <div class="ingredients">
+                    <h4>מרכיבים:</h4>
+                    <ul>
+                        <li><span class="amount">250</span> <span class="unit">גרם</span> קמח חיטה</li>
+                        <li><span class="amount">150</span> <span class="unit">גרם</span> קסטן קלוי כסוס</li>
+                        <li><span class="amount">5</span> <span class="unit">גרם</span> מלח</li>
+                        <li><span class="amount">7</span> <span class="unit">גרם</span> שמרים טריים</li>
+                        <li><span class="amount">180</span> <span class="unit">מ"ל</span> מים חמימים</li>
+                        <li><span class="amount">30</span> <span class="unit">מ"ל</span> שמן זית</li>
+                    </ul>
+                </div>
+                <p class="instructions">שימו לב: הקסטן צריך להיות בגוגשות עדינות.</p>
+            </div>
+
+            <!-- Recipe 2 -->
+            <div class="recipe">
+                <h3>לחם אגוזים של עוגיונט</h3>
+                <div class="multiplier-buttons">
+                    <button class="mult-btn" onclick="setMultiplier(this, 0.5)">÷2</button>
+                    <span class="mult-display">x1</span>
+                    <button class="mult-btn" onclick="setMultiplier(this, 2)">×2</button>
+                </div>
+
+                <div class="ingredients">
+                    <h4>מרכיבים:</h4>
+                    <ul>
+                        <li><span class="amount">300</span> <span class="unit">גרם</span> קמח כל-תכליתי</li>
+                        <li><span class="amount">200</span> <span class="unit">גרם</span> אגוזים טחונים</li>
+                        <li><span class="amount">100</span> <span class="unit">מ"ל</span> חלב</li>
+                        <li><span class="amount">2</span> <span class="unit">ביצים</span> גדולות</li>
+                        <li><span class="amount">100</span> <span class="unit">גרם</span> סוכר חום</li>
+                        <li><span class="amount">50</span> <span class="unit">גרם</span> חמאה</li>
+                        <li><span class="amount">10</span> <span class="unit">גרם</span> אבקת אפייה</li>
+                    </ul>
+                </div>
+                <p class="instructions">מבשלים במחממת לחם על 180 מעלות ל-35 דקות.</p>
+            </div>
+
+            <!-- Recipe 3 -->
+            <div class="recipe">
+                <h3>פיתות של קרוטית</h3>
+                <div class="multiplier-buttons">
+                    <button class="mult-btn" onclick="setMultiplier(this, 0.5)">÷2</button>
+                    <span class="mult-display">x1</span>
+                    <button class="mult-btn" onclick="setMultiplier(this, 2)">×2</button>
+                </div>
+
+                <div class="ingredients">
+                    <h4>מרכיבים:</h4>
+                    <ul>
+                        <li><span class="amount">400</span> <span class="unit">גרם</span> קמח לבן</li>
+                        <li><span class="amount">250</span> <span class="unit">מ"ל</span> מים</li>
+                        <li><span class="amount">8</span> <span class="unit">גרם</span> מלח</li>
+                        <li><span class="amount">5</span> <span class="unit">גרם</span> שמרים</li>
+                        <li><span class="amount">20</span> <span class="unit">מ"ל</span> שמן</li>
+                        <li><span class="amount">1</span> <span class="unit">כפית</span> כומון (קרוטית)</li>
+                    </ul>
+                </div>
+                <p class="instructions">מעלים לתנור ב-220 מעלות עם אדים ל-12 דקות.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>אודות</h2>
+            <p>ברוכים הבאים לעמוד המאפים שלי! כאן תוכלו למצוא מתכונים טעימים של לחמות ופיתות.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 מאפים. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
