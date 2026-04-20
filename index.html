@@ -23,72 +23,149 @@
 
             <!-- Recipe 1 -->
             <div class="recipe">
-                <h3>לחם קסטן של אדוה רויס</h3>
+                <div class="recipe-header">
+                    <h3>לחם קסטן של אדוה רויס</h3>
+                    <div class="recipe-action-buttons">
+                        <button class="action-btn" onclick="toggleRecipeDetails(this)">פרטים מלאים</button>
+                        <button class="action-btn" onclick="printRecipe(this)">הדפסה</button>
+                        <button class="action-btn" onclick="shareRecipe(this)">שיתוף</button>
+                    </div>
+                </div>
+
                 <div class="multiplier-buttons">
                     <button class="mult-btn" onclick="setMultiplier(this, 0.5)">÷2</button>
                     <span class="mult-display">x1</span>
                     <button class="mult-btn" onclick="setMultiplier(this, 2)">×2</button>
                 </div>
                 
-                <div class="ingredients">
-                    <h4>מרכיבים:</h4>
-                    <ul>
-                        <li><span class="amount">250</span> <span class="unit">גרם</span> קמח חיטה</li>
-                        <li><span class="amount">150</span> <span class="unit">גרם</span> קסטן קלוי כסוס</li>
-                        <li><span class="amount">5</span> <span class="unit">גרם</span> מלח</li>
-                        <li><span class="amount">7</span> <span class="unit">גרם</span> שמרים טריים</li>
-                        <li><span class="amount">180</span> <span class="unit">מ"ל</span> מים חמימים</li>
-                        <li><span class="amount">30</span> <span class="unit">מ"ל</span> שמן זית</li>
-                    </ul>
+                <div class="recipe-content">
+                    <div class="ingredients-column">
+                        <h4>מרכיבים:</h4>
+                        <ul>
+                            <li><span class="amount">250</span> <span class="unit">גרם</span> קמח לחם לבן</li>
+                            <li><span class="amount">250</span> <span class="unit">גרם</span> קמח כוסמין מלא</li>
+                            <li><span class="amount">10</span> <span class="unit">גרם</span> שמרים יבשים</li>
+                            <li><span class="amount">2</span> <span class="unit">כפות</span> סוכר לבן</li>
+                            <li><span class="amount">1</span> <span class="unit">כף</span> מלח</li>
+                            <li><span class="amount">300</span> <span class="unit">מ"ל</span> מים פושרים</li>
+                            <li><span class="amount">50</span> <span class="unit">מ"ל</span> שמן זית</li>
+                        </ul>
+                        <h4>לציפוי:</h4>
+                        <ul>
+                            <li>שומשום לבן</li>
+                            <li>גרעיני חמנייה</li>
+                            <li>גרעיני דלעת</li>
+                            <li>סילאן</li>
+                        </ul>
+                    </div>
+
+                    <div class="instructions-column">
+                        <h4>הוראות הכנה:</h4>
+                        <ol>
+                            <li><strong>התססת השמרים:</strong> מערבבים מים פושרים עם שמרים וסוכר, ממתינים 5-10 דקות עד שנוצר קצף.</li>
+                            <li><strong>הכנת הבצק:</strong> מוסיפים לקערת המיקסר את שני סוגי הקמח והמלח. לשים עם וו לישה במהירות נמוכה.</li>
+                            <li><strong>הוספת השמן:</strong> מוסיפים שמן זית בזרם איטי, ממשיכים ללוש 10-12 דקות עד לבצק רך ואלסטי.</li>
+                            <li><strong>התפחה ראשונה:</strong> יוצרים כדור מבצק, מניחים בקערה משומנת, מכסים ומתפיחים שעה עד שיכפיל את הנפח.</li>
+                            <li><strong>עיצוב:</strong> מרדדים למלבן, מגלגלים לרולדה הדוקה, טובלים במי סילאן, מגלגלים בזרעים.</li>
+                            <li><strong>התפחה שנייה:</strong> מניחים בתבנית קסטן עם מכסה, מתפיחים 30-45 דקות.</li>
+                            <li><strong>אפייה:</strong> מחממים תנור ל-190 מעלות, אופים 30-40 דקות עם מכסה, ואז 5-10 דקות ללא מכסה.</li>
+                        </ol>
+                        <p class="tips"><strong>טיפ:</strong> הוציאו מיד מהתבנית והנחו על רשת לשמירה על קרום פריך.</p>
+                    </div>
                 </div>
-                <p class="instructions">שימו לב: הקסטן צריך להיות בגוגשות עדינות.</p>
             </div>
 
             <!-- Recipe 2 -->
             <div class="recipe">
-                <h3>לחם אגוזים של עוגיונט</h3>
+                <div class="recipe-header">
+                    <h3>לחם אגוזים של עוגיונט</h3>
+                    <div class="recipe-action-buttons">
+                        <button class="action-btn" onclick="toggleRecipeDetails(this)">פרטים מלאים</button>
+                        <button class="action-btn" onclick="printRecipe(this)">הדפסה</button>
+                        <button class="action-btn" onclick="shareRecipe(this)">שיתוף</button>
+                    </div>
+                </div>
+
                 <div class="multiplier-buttons">
                     <button class="mult-btn" onclick="setMultiplier(this, 0.5)">÷2</button>
                     <span class="mult-display">x1</span>
                     <button class="mult-btn" onclick="setMultiplier(this, 2)">×2</button>
                 </div>
 
-                <div class="ingredients">
-                    <h4>מרכיבים:</h4>
-                    <ul>
-                        <li><span class="amount">300</span> <span class="unit">גרם</span> קמח כל-תכליתי</li>
-                        <li><span class="amount">200</span> <span class="unit">גרם</span> אגוזים טחונים</li>
-                        <li><span class="amount">100</span> <span class="unit">מ"ל</span> חלב</li>
-                        <li><span class="amount">2</span> <span class="unit">ביצים</span> גדולות</li>
-                        <li><span class="amount">100</span> <span class="unit">גרם</span> סוכר חום</li>
-                        <li><span class="amount">50</span> <span class="unit">גרם</span> חמאה</li>
-                        <li><span class="amount">10</span> <span class="unit">גרם</span> אבקת אפייה</li>
-                    </ul>
+                <div class="recipe-content">
+                    <div class="ingredients-column">
+                        <h4>מרכיבים:</h4>
+                        <ul>
+                            <li><span class="amount">750</span> <span class="unit">גרם</span> קמח לבן</li>
+                            <li><span class="amount">500</span> <span class="unit">מ"ל</span> מים</li>
+                            <li><span class="amount">15</span> <span class="unit">גרם</span> שמרים יבשים</li>
+                            <li><span class="amount">25</span> <span class="unit">גרם</span> מלח</li>
+                            <li><span class="amount">100</span> <span class="unit">גרם</span> אגוזי מלך קצוצים</li>
+                            <li><span class="amount">1</span> <span class="unit">כף</span> דבש או סילאן</li>
+                            <li><span class="amount">1</span> <span class="unit">כף</span> שמן זית</li>
+                        </ul>
+                    </div>
+
+                    <div class="instructions-column">
+                        <h4>הוראות הכנה:</h4>
+                        <ol>
+                            <li><strong>לישת הבצק:</strong> בקערת המיקסר עם וו לישה, מערבבים קמח, מים, שמרים, מלח, דבש ושמן.</li>
+                            <li><strong>לישה:</strong> לשים 12-15 דקות עד בצק אחיד.</li>
+                            <li><strong>הוספת אגוזים:</strong> מעבירים את הבצק למשטח עבודה, מוסיפים אגוזים קצוצים, מעבדים בלישה ידנית עד שהם נטמעים.</li>
+                            <li><strong>התפחה ראשונה:</strong> מניחים לתפוח במקום חמים כ-1.5 שעות עד שהבצק מכפיל את נפחו.</li>
+                            <li><strong>עיצוב כיכרות:</strong> מחלקים לשני חלקים שווים, יוצרים צורת כיכרה מכל חלק.</li>
+                            <li><strong>התפחה שנייה:</strong> מניחים על תבנית עם נייר אפייה במרווח של 6-8 ס"מ, מתפיחים 45-60 דקות.</li>
+                            <li><strong>אפייה:</strong> בתנור מחומם ל-250 מעלות, אופים 12-15 דקות בטמפרטורה מקסימלית, ואז ל-190 מעלות עוד 20-25 דקות.</li>
+                        </ol>
+                        <p class="tips"><strong>טיפ:</strong> אפשר להשתמש בסוגי אגוזים אחרים - לוז, פקאן, פיסטוקים וכו'.</p>
+                    </div>
                 </div>
-                <p class="instructions">מבשלים במחממת לחם על 180 מעלות ל-35 דקות.</p>
             </div>
 
             <!-- Recipe 3 -->
             <div class="recipe">
-                <h3>פיתות של קרוטית</h3>
+                <div class="recipe-header">
+                    <h3>פיתות של קרוטית</h3>
+                    <div class="recipe-action-buttons">
+                        <button class="action-btn" onclick="toggleRecipeDetails(this)">פרטים מלאים</button>
+                        <button class="action-btn" onclick="printRecipe(this)">הדפסה</button>
+                        <button class="action-btn" onclick="shareRecipe(this)">שיתוף</button>
+                    </div>
+                </div>
+
                 <div class="multiplier-buttons">
                     <button class="mult-btn" onclick="setMultiplier(this, 0.5)">÷2</button>
                     <span class="mult-display">x1</span>
                     <button class="mult-btn" onclick="setMultiplier(this, 2)">×2</button>
                 </div>
 
-                <div class="ingredients">
-                    <h4>מרכיבים:</h4>
-                    <ul>
-                        <li><span class="amount">400</span> <span class="unit">גרם</span> קמח לבן</li>
-                        <li><span class="amount">250</span> <span class="unit">מ"ל</span> מים</li>
-                        <li><span class="amount">8</span> <span class="unit">גרם</span> מלח</li>
-                        <li><span class="amount">5</span> <span class="unit">גרם</span> שמרים</li>
-                        <li><span class="amount">20</span> <span class="unit">מ"ל</span> שמן</li>
-                        <li><span class="amount">1</span> <span class="unit">כפית</span> כומון (קרוטית)</li>
-                    </ul>
+                <div class="recipe-content">
+                    <div class="ingredients-column">
+                        <h4>מרכיבים:</h4>
+                        <ul>
+                            <li><span class="amount">600</span> <span class="unit">מ"ל</span> מים</li>
+                            <li><span class="amount">15</span> <span class="unit">גרם</span> שמרים יבשים</li>
+                            <li><span class="amount">35</span> <span class="unit">גרם</span> סוכר</li>
+                            <li><span class="amount">1</span> <span class="unit">ק"ג</span> קמח לבן</li>
+                            <li><span class="amount">5</span> <span class="unit">כפות</span> שמן זית</li>
+                            <li><span class="amount">1</span> <span class="unit">כף</span> מלח</li>
+                        </ul>
+                    </div>
+
+                    <div class="instructions-column">
+                        <h4>הוראות הכנה:</h4>
+                        <ol>
+                            <li><strong>התססת השמרים:</strong> בקערת המיקסר מערבבים מים, שמרים וסוכר, ממתינים 15 דקות.</li>
+                            <li><strong>הכנת הבצק:</strong> מוסיפים קמח, שמן ומלח, לשים עם וו לישה במהירות בינונית 8 דקות.</li>
+                            <li><strong>התאמה:</strong> אם הבצק יבש מדי, מוסיפים עוד קצת מים בהדרגה. אם דביק, מוסיפים קמח.</li>
+                            <li><strong>התפחה ראשונה:</strong> מכסים ומתפיחים כשעה עד שהבצק מכפיל את נפחו.</li>
+                            <li><strong>עיצוב:</strong> מחלקים לכדורים (15-20 תלוי בגודל), משטחים כל כדור לפיתה דקה בעובי 0.5 ס"מ.</li>
+                            <li><strong>התפחה שנייה:</strong> מניחים על תבנית עם נייר אפייה, מכסים במגבת 10 דקות.</li>
+                            <li><strong>אפייה:</strong> בתנור מחומם ל-250 מעלות, אופים 3 דקות מכל צד עד שהפיתות תופחות ויוצרות כיס.</li>
+                        </ol>
+                        <p class="tips"><strong>טיפ:</strong> התנור חייב להיות ממש רותח! אפשר להוסיף שומשום בעטיפה במים לפני אפייה.</p>
+                    </div>
                 </div>
-                <p class="instructions">מעלים לתנור ב-220 מעלות עם אדים ל-12 דקות.</p>
             </div>
         </section>
 

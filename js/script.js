@@ -1,3 +1,38 @@
+// Recipe action buttons functionality
+function toggleRecipeDetails(button) {
+    const recipe = button.closest('.recipe');
+    const content = recipe.querySelector('.recipe-content');
+    content.style.display = content.style.display === 'none' ? 'grid' : 'none';
+    button.textContent = content.style.display === 'none' ? 'פרטים מלאים' : 'הסתרה';
+}
+
+function printRecipe(button) {
+    const recipe = button.closest('.recipe');
+    const recipeName = recipe.querySelector('h3').textContent;
+    const window_print = window.open('', '', 'height=400,width=600');
+    window_print.document.write('<html><head><title>' + recipeName + '</title>');
+    window_print.document.write('<style>body { font-family: Arial; direction: rtl; text-align: right; }</style></head><body>');
+    window_print.document.write(recipe.innerHTML);
+    window_print.document.write('</body></html>');
+    window_print.document.close();
+    window_print.print();
+}
+
+function shareRecipe(button) {
+    const recipe = button.closest('.recipe');
+    const recipeName = recipe.querySelector('h3').textContent;
+    const shareText = `בואו להכין איתי את ${recipeName}! ${window.location.href}`;
+    
+    if (navigator.share) {
+        navigator.share({
+            title: recipeName,
+            text: shareText
+        });
+    } else {
+        alert('שתפו את הקישור: ' + window.location.href);
+    }
+}
+
 // Recipe multiplier functionality
 let multipliers = [1, 1, 1]; // One multiplier for each recipe
 

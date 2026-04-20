@@ -90,10 +90,116 @@ section h2 {
     box-shadow: 0 2px 8px rgba(139, 115, 85, 0.1);
 }
 
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .recipe h3 {
     color: #8b7355;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     font-size: 1.5rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.recipe-action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background-color: #c49560;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #a0826d;
+    transform: scale(1.02);
+}
+
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.ingredients-column {
+    background-color: #f5f0e8;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-right: 3px solid #d4a574;
+}
+
+.ingredients-column h4 {
+    color: #8b7355;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.ingredients-column h4:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+.ingredients-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-column li {
+    padding: 0.4rem 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.instructions-column h4 {
+    color: #8b7355;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.instructions-column ol {
+    padding-right: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.instructions-column li {
+    margin-bottom: 0.8rem;
+    text-align: right;
+}
+
+.instructions-column strong {
+    color: #8b7355;
+}
+
+.tips {
+    background-color: #f0e6d2;
+    padding: 1rem;
+    border-radius: 6px;
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+    border-right: 3px solid #d4a574;
+    text-align: right;
 }
 
 .multiplier-buttons {
@@ -235,8 +341,39 @@ footer p {
         font-size: 1.5rem;
     }
 
+    .recipe-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .recipe h3 {
         font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .recipe-action-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .action-btn {
+        flex: 1;
+        min-width: 70px;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+    .recipe-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .ingredients-column {
+        padding: 1rem;
+    }
+
+    .instructions-column ol {
+        padding-right: 1rem;
     }
 
     .multiplier-buttons {
